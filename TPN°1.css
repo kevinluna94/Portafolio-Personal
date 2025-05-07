@@ -1,7 +1,24 @@
 /* Estilos generales para el cuerpo del documento */
 body {
     font-family: 'Segoe UI', sans-serif; /* Fuente principal */
-    margin: 0; /* Elimina el margen por defecto */
-    padding: 0; /* Elimina el relleno por defecto */
-    scroll-behavior: smooth; /* Desplazamiento suave al hacer clic en enlaces */
+    margin: 0; 
+    padding: 0;
+    scroll-behavior: smooth; 
 }
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: white; 
+}
+
+.navbar-brand {
+    color: #ff9800; 
+}
+
+.navbar-nav .nav-link {
+    color: black; 
+}
+
+.nav-link:hover {
+    color: #ff9800; 
+}
+
