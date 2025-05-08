@@ -151,3 +151,34 @@ h2 {
     font-size: 1.5rem;      
     margin-bottom: 10px;    
   }
+
+  /* Estilos para la sección de contacto */
+#contacto {
+    background-color: #ffffff; /* Fondo blanco */
+}
+
+/* Formularios: campos */
+form input,
+form textarea {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Botón del formulario */
+form button {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto hover del botón */
+form button:hover {
+    background-color: #e68900;
+    transform: translateY(-3px);
+}
+
