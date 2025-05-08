@@ -42,7 +42,7 @@ body {
     display: flex; 
     flex-direction: column; 
     justify-content: center;
-    align-items: center; /
+    align-items: center; 
     text-align: center; 
     border-radius: 10px; 
 }
@@ -69,3 +69,26 @@ body {
     transform: translateY(-5px); 
 }
 
+/* Estilos para la sección de objetivo */
+.objetivo {
+    min-height: 100vh; /* Ocupa al menos toda la altura del viewport */
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding: 50px 20px; 
+    background-color: #f8f9fa;
+}
+
+/* Estilos para los títulos principales */
+h2 {
+    font-weight: 700; 
+    margin-bottom: 20px;
+}
+
+/* Estilos para los párrafos en la sección objetivo */
+.objetivo p {
+    max-width: 800px; 
+    margin: auto; 
+    line-height: 1.8; 
+    color: #333; 
+}
