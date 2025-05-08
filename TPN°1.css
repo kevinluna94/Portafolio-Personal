@@ -22,3 +22,50 @@ body {
     color: #ff9800; 
 }
 
+/* Estilos para la sección de inicio */
+.inicio {
+    height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-image: url('Imagenes/Portada.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+}
+
+.inicio .overlay {
+    background: rgba(0, 0, 0, 0.6); 
+    color: white; 
+    padding: 2rem; 
+    height: 100%; 
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; /
+    text-align: center; 
+    border-radius: 10px; 
+}
+
+.inicio:hover {
+    transform: scale(1.03); /* Efecto de zoom al pasar el cursor */
+}
+
+/* Estilos para los botones personalizados */
+.btn-next {
+    margin-top: 20px; 
+    padding: 12px 30px; 
+    background-color: #ff9800; 
+    color: white; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    border-radius: 25px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    border: none;
+}
+
+.btn-next:hover {
+    background-color: #e68900; 
+    transform: translateY(-5px); 
+}
+
