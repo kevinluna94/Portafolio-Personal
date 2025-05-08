@@ -182,3 +182,26 @@ form button:hover {
     transform: translateY(-3px);
 }
 
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Responsivo: títulos y textos más pequeños en pantallas chicas */
+@media (max-width: 768px) {
+    .inicio .overlay h2 {
+        font-size: 1.8rem;
+    }
+
+    .inicio .overlay p {
+        font-size: 1rem;
+    }
+
+    .btn-next {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
