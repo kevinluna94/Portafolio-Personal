@@ -9,9 +9,8 @@
   <link rel="stylesheet" href="TPN°1.css" /> <!-- Hoja de estilos personalizada -->
 </head>
 
-    
-</body>
-
+<body>
+<header>
 <!-- Barra de navegación principal -->
 <nav class="navbar navbar-expand-lg fixed-top"> <!-- Barra fija arriba -->
     <div class="container"> 
@@ -40,106 +39,110 @@
       </div>
     </div>
   </nav>
+</header>
 
-   <!-- Sección de bienvenida -->
-   <section id="inicio" class="inicio">
-    <div class="overlay"> <!-- Capa de fondo semitransparente -->
-      <h2 class="display-5 fw-bold">Transformo ideas en sitios web impactantes</h2>
-      <p class="lead">Diseño experiencias digitales con estilo, estrategia y funcionalidad</p>
-      <a href="#objetivo" class="btn btn-next">Descubre más</a>
+<main>
+    <!-- Sección de bienvenida -->
+    <section id="inicio" class="inicio">
+      <div class="overlay"> <!-- Capa de fondo semitransparente -->
+        <h2 class="display-5 fw-bold">Transformo ideas en sitios web impactantes</h2>
+        <p class="lead">Diseño experiencias digitales con estilo, estrategia y funcionalidad</p>
+        <a href="#objetivo" class="btn btn-next">Descubre más</a>
+      </div>
+    </section>
+
+    <!-- Sección de objetivo del sitio -->
+    <section id="objetivo" class="objetivo">
+      <div class="container text-center">
+        <h2 class="text-warning mb-4">¿Qué vas a encontrar acá?</h2>
+        <p class="fs-5 text-dark">
+          Este sitio tiene como objetivo mostrar mis trabajos como Desarrollador Web Full Stack. Vas a encontrar proyectos realizados con HTML, CSS y Bootstrap, donde aplico diseño responsivo y buenas prácticas. También podés explorar una galería de ejemplos y contactarme si querés colaborar o tenés una idea para desarrollar. ¡Bienvenido a mi portafolio!
+        </p>
+        <a href="#trabajos" class="btn btn-next">Ver mis trabajos</a>
+      </div>
+    </section>
+
+    <!-- Sección de trabajos o portafolio -->
+  <section id="trabajos" class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center text-warning mb-5">Mis Trabajos</h2>
+      <div class="row g-4">
+
+        <!-- Proyecto 1 -->
+        <div class="col-md-8">
+          <div class="proyecto position-relative">
+            <img src="Imagenes/Foto empresa 1.png" class="img-fluid w-100" alt="Pagina Web de Consultoría Cliente 1">
+            <div class="overlay">
+              <h4>Consultoría Cliente 1</h4>
+              <p>Pagina Web de Consultoría Cliente 1</p>
+              <a href="https://ar.pinterest.com/pin/8866530510930933/" target="_blank" class="btn btn-next">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="col-md-4">
+          <div class="proyecto position-relative">
+            <img src="Imagenes/Foto empresa 2.png" class="img-fluid w-100" alt="Página Web de Cliente 3">
+            <div class="overlay">
+              <h4>Página Web de Cliente 3</h4>
+              <p>E-commerce para tienda</p>
+              <a href="#" class="btn btn-next">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="col-md-4">
+          <div class="proyecto position-relative">
+            <img src="Imagenes/Foto empresa 3.avif" class="img-fluid w-100" alt="Página Web de Cliente 3">
+            <div class="overlay">
+              <h4>Página Web de Cliente 3</h4>
+              <p>E-commerce para tienda</p>
+              <a href="#" class="btn btn-next">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 4 -->
+        <div class="col-md-8">
+          <div class="proyecto position-relative">
+            <img src="Imagenes/Foto empresa 4.jpg" class="img-fluid w-100" alt="Pagina Web de Cliente 4">
+            <div class="overlay">
+              <h4>Pagina Web de Cliente 4</h4>
+              <p>Landing page para emprendedor</p>
+              <a href="#" class="btn btn-next">Ver más></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-   <!-- Sección de objetivo del sitio -->
-   <section id="objetivo" class="objetivo">
-    <div class="container text-center">
-      <h2 class="text-warning mb-4">¿Qué vas a encontrar acá?</h2>
-      <p class="fs-5 text-dark">
-        Este sitio tiene como objetivo mostrar mis trabajos como Desarrollador Web Full Stack. Vas a encontrar proyectos realizados con HTML, CSS y Bootstrap, donde aplico diseño responsivo y buenas prácticas. También podés explorar una galería de ejemplos y contactarme si querés colaborar o tenés una idea para desarrollar. ¡Bienvenido a mi portafolio!
-      </p>
-      <a href="#trabajos" class="btn btn-next">Ver mis trabajos</a>
+  <!-- Sección de contacto -->
+  <section id="contacto" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4 text-dark">¡Hablemos!</h2>
+      <form>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" required>
+        </div>
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="correo" required>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-next">Enviar</button>
+      </form>
     </div>
   </section>
 
-  <!-- Sección de trabajos o portafolio -->
-<section id="trabajos" class="py-5 bg-dark text-white">
-  <div class="container">
-    <h2 class="text-center text-warning mb-5">Mis Trabajos</h2>
-    <div class="row g-4">
+</main>
 
-      <!-- Proyecto 1 -->
-      <div class="col-md-8">
-        <div class="proyecto position-relative">
-          <img src="Imagenes/Foto empresa 1.png" class="img-fluid w-100" alt="Pagina Web de Consultoría Cliente 1">
-          <div class="overlay">
-            <h4>Consultoría Cliente 1</h4>
-            <p>Pagina Web de Consultoría Cliente 1</p>
-            <a href="https://ar.pinterest.com/pin/8866530510930933/" target="_blank" class="btn btn-next">Ver más</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Proyecto 2 -->
-      <div class="col-md-4">
-        <div class="proyecto position-relative">
-          <img src="Imagenes/Foto empresa 2.png" class="img-fluid w-100" alt="Página Web de Cliente 3">
-          <div class="overlay">
-            <h4>Página Web de Cliente 3</h4>
-            <p>E-commerce para tienda</p>
-            <a href="#" class="btn btn-next">Ver más</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Proyecto 3 -->
-      <div class="col-md-4">
-        <div class="proyecto position-relative">
-          <img src="Imagenes/Foto empresa 3.avif" class="img-fluid w-100" alt="Página Web de Cliente 3">
-          <div class="overlay">
-            <h4>Página Web de Cliente 3</h4>
-            <p>E-commerce para tienda</p>
-            <a href="#" class="btn btn-next">Ver más</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Proyecto 4 -->
-      <div class="col-md-8">
-        <div class="proyecto position-relative">
-          <img src="Imagenes/Foto empresa 4.jpg" class="img-fluid w-100" alt="Pagina Web de Cliente 4">
-          <div class="overlay">
-            <h4>Pagina Web de Cliente 4</h4>
-            <p>Landing page para emprendedor</p>
-            <a href="#" class="btn btn-next">Ver más></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
- <!-- Sección de contacto -->
- <section id="contacto" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-4 text-dark">¡Hablemos!</h2>
-    <form>
-      <div class="mb-3">
-        <label for="nombre" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="nombre" required>
-      </div>
-      <div class="mb-3">
-        <label for="correo" class="form-label">Correo</label>
-        <input type="email" class="form-control" id="correo" required>
-      </div>
-      <div class="mb-3">
-        <label for="mensaje" class="form-label">Mensaje</label>
-        <textarea class="form-control" id="mensaje" rows="3" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-next">Enviar</button>
-    </form>
-  </div>
-
-</section>
   <!-- Pie de página -->
   <footer class="text-center text-white bg-black py-3">
     <p class="mb-0">© 2025 Kevin Luna. Todos los derechos reservados.</p>
