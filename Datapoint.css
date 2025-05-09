@@ -1,0 +1,76 @@
+body {
+  padding-top: 70px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Secciones generales */
+.seccion {
+  padding: 100px 0;
+}
+
+/* Fondo para sección INICIO */
+.inicio {
+  background-image: url(Imagenes/backgraund-datapoint.jpg);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+
+/* Títulos */
+.titulo {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Botón principal */
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #00b4d8;
+  color: #00b4d8;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.boton:hover {
+  background-color: #00b4d8;
+  color: white;
+}
+
+/* Fondo oscuro para contacto */
+.fondo-oscuro {
+  background-color: #121212;
+}
+
+/* Inputs y Textareas */
+.campo {
+  background-color: #212529;
+  color: white;
+  border: none;
+}
+
+.campo:focus {
+  background-color: #343a40;
+  border: 1px solid #00b4d8;
+  color: white;
+}
+
+/* Estilo vinculo index.html*/
+.volver-enlace {
+  color: #00b4d8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.volver-enlace:hover {
+  text-decoration: underline;
+  color: #48cae4;
+}
