@@ -1,0 +1,34 @@
+/* Estilos para los botones personalizados */
+.btn-next {
+    margin-top: 20px; 
+    padding: 12px 30px; 
+    background-color: #ff9800; 
+    color: white; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    border-radius: 25px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    border: none;
+}
+
+.btn-next:hover {
+    background-color: #e68900; 
+    transform: translateY(-5px); 
+}
+
+/* Botón del formulario */
+form button {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto hover del botón */
+form button:hover {
+    background-color: #e68900;
+    transform: translateY(-3px);
+}
