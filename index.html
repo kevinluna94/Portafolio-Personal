@@ -3,115 +3,149 @@
 
 <head>
   <meta charset="UTF-8" /> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Para responsive design en dispositivos móviles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Responsive -->
   <title>Kevin Luna - Desarrollador Web Full Stack</title> 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" /> <!-- Bootstrap CDN para estilos -->
-  <link rel="stylesheet" href="index.css" /> <!-- Hoja de estilos personalizada -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
 <header>
-<!-- Barra de navegación principal -->
-<nav class="navbar navbar-expand-lg fixed-top"> <!-- Barra fija arriba -->
-    <div class="container"> 
-      <a class="navbar" href="#">
-        <img src="Imagenes/Kevin-Luna-logo.jpg" alt="Logo de empresa" width="40" height="40">
-      </a> 
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
-        <span class="navbar-toggler-icon"></span> <!-- Icono de hamburguesa -->
+  <!-- Barra de navegación principal -->
+  <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="Imagenes/Kevin-Luna-logo.jpg" alt="Logo de empresa" width="40" height="40" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> <!-- Menú colapsable -->
-        <ul class="navbar-nav"> 
-          <li class="nav-item">
-            <a class="nav-link" href="#inicio">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#objetivo">Objetivo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#trabajos">Trabajos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#agenda">Contacto</a>
-          </li>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#objetivo">Objetivo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#trabajos">Trabajos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#agenda">Contacto</a></li>
         </ul>
       </div>
     </div>
   </nav>
 </header>
 
-<main>
-    <!-- Sección de bienvenida -->
-    <section id="inicio" class="inicio">
-      <div class="overlay"> <!-- Capa de fondo semitransparente -->
-        <h2 class="display-5 fw-bold">Transformo ideas en sitios web impactantes</h2>
-        <p class="lead">Diseño experiencias digitales con estilo, estrategia y funcionalidad</p>
-        <a href="#objetivo" class="btn btn-next">Descubre más</a>
-      </div>
-    </section>
+<main class="mt-5 pt-4"> <!-- Margin top para que no tape navbar fija -->
 
-    <!-- Sección de objetivo del sitio -->
-    <section id="objetivo" class="objetivo">
-      <div class="container text-center">
-        <h2 class="text-warning mb-4">¿Qué vas a encontrar acá?</h2>
-        <p class="fs-5 text-dark">
-          Este sitio tiene como objetivo mostrar mis trabajos como Desarrollador Web Full Stack. Vas a encontrar proyectos realizados con HTML, CSS y Bootstrap, donde aplico diseño responsivo y buenas prácticas. También podés explorar una galería de ejemplos y contactarme si querés colaborar o tenés una idea para desarrollar. ¡Bienvenido a mi portafolio!
-        </p>
-        <a href="#trabajos" class="btn btn-next">Ver mis trabajos</a>
-      </div>
-    </section>
+  <!-- Sección Inicio con Carrusel -->
+  <section id="inicio" class="inicio p-0 m-0">
+    <div id="carouselHero" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000">
+      <div class="carousel-inner">
 
-    <!-- Sección de trabajos o portafolio -->
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="carousel-background" style="background-image: url('https://i.pinimg.com/736x/9a/30/d5/9a30d5dbcc1b499b376724a6f8f034f6.jpg');">
+            <div class="overlay">
+              <h2 class="display-5 fw-bold">Transformo ideas en sitios web impactantes</h2>
+              <p class="lead">Diseño experiencias digitales con estilo, estrategia y funcionalidad</p>
+              <a href="#objetivo" class="btn btn-primary btn-lg btn-next">Descubre más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="carousel-background" style="background-image: url('https://i.pinimg.com/736x/97/e3/b3/97e3b331fdb7671f23cfc895aa79e989.jpg');">
+            <div class="overlay">
+              <h2 class="display-5 fw-bold">Diseño centrado en el usuario</h2>
+              <p class="lead">Desarrollos web rápidos, modernos y escalables</p>
+              <a href="#trabajos" class="btn btn-primary btn-lg btn-next">Ver trabajos</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="carousel-background" style="background-image: url('https://i.pinimg.com/736x/c1/2b/ce/c12bce922a1798223e25518c61650d25.jpg');">
+            <div class="overlay">
+              <h2 class="display-5 fw-bold">Desarrollo Full Stack a medida</h2>
+              <p class="lead">Aplicaciones dinámicas para impulsar tu negocio</p>
+              <a href="#agenda" class="btn btn-primary btn-lg btn-next">Agenda tu cita</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev" aria-label="Anterior">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next" aria-label="Siguiente">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Sección Objetivo -->
+  <section id="objetivo" class="objetivo py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="text-warning fw-bold mb-4">¿Qué vas a encontrar acá?</h2>
+      <p class="fs-5 text-dark mx-auto" style="max-width: 800px;">
+        Este sitio tiene como objetivo mostrar mis trabajos como Desarrollador Web Full Stack. Vas a encontrar proyectos realizados con HTML, CSS y Bootstrap, donde aplico diseño responsivo y buenas prácticas. También podés explorar una galería de ejemplos y contactarme si querés colaborar o tenés una idea para desarrollar. ¡Bienvenido a mi portafolio!
+      </p>
+      <a href="#trabajos" class="btn btn-primary btn-lg btn-next mt-3">Ver mis trabajos</a>
+    </div>
+  </section>
+
+  <!-- Sección Trabajos / Portafolio -->
   <section id="trabajos" class="py-5 bg-dark text-white">
     <div class="container">
-      <h2 class="text-center text-warning mb-5">Mis Trabajos</h2>
+      <h2 class="text-center text-warning fw-bold mb-5">Mis Trabajos</h2>
       <div class="row g-4">
 
         <!-- Proyecto 1 -->
         <div class="col-md-8">
-          <div class="proyecto position-relative">
-            <img src="Imagenes/Datapoint-portada-trabajos.png" class="img-fluid w-100" alt="Pagina Web de Datapoint">
+          <div class="proyecto position-relative rounded overflow-hidden shadow-sm">
+            <img src="Imagenes/Datapoint-portada-trabajos.png" class="img-fluid w-100" alt="Pagina Web de Datapoint" />
             <div class="overlay">
               <h4>Datapoint</h4>
               <p>Pagina Web de Datapoint</p>
-              <a href="Datapoint.html" target="_blank" class="btn btn-next">Ver más</a>
+              <a href="Datapoint.html" target="_blank" class="btn btn-primary btn-next">Ver más</a>
             </div>
           </div>
         </div>
 
         <!-- Proyecto 2 -->
         <div class="col-md-4">
-          <div class="proyecto position-relative">
-            <img src="Imagenes/Portada.jpg" class="img-fluid w-100" alt="Página Web de Cliente 3">
+          <div class="proyecto position-relative rounded overflow-hidden shadow-sm">
+            <img src="Imagenes/Portada.jpg" class="img-fluid w-100" alt="Página Web de Cliente 3" />
             <div class="overlay">
               <h4>Página Web de Cliente 3</h4>
               <p>E-commerce para tienda</p>
-              <a href="Datapoint.html" class="btn btn-next">Ver más</a>
+              <a href="Datapoint.html" class="btn btn-primary btn-next">Ver más</a>
             </div>
           </div>
         </div>
 
         <!-- Proyecto 3 -->
         <div class="col-md-4">
-          <div class="proyecto position-relative">
-            <img src="Imagenes/Foto empresa 3.avif" class="img-fluid w-100" alt="Página Web de Cliente 3">
+          <div class="proyecto position-relative rounded overflow-hidden shadow-sm">
+            <img src="Imagenes/Foto empresa 3.avif" class="img-fluid w-100" alt="Página Web de Cliente 3" />
             <div class="overlay">
               <h4>Página Web de Cliente 3</h4>
               <p>E-commerce para tienda</p>
-              <a href="Datapoint.html" class="btn btn-next">Ver más</a>
+              <a href="Datapoint.html" class="btn btn-primary btn-next">Ver más</a>
             </div>
           </div>
         </div>
 
         <!-- Proyecto 4 -->
         <div class="col-md-8">
-          <div class="proyecto position-relative">
-            <img src="Imagenes/Foto empresa 4.jpg" class="img-fluid w-100" alt="Pagina Web de Cliente 4">
+          <div class="proyecto position-relative rounded overflow-hidden shadow-sm">
+            <img src="Imagenes/Foto empresa 4.jpg" class="img-fluid w-100" alt="Pagina Web de Cliente 4" />
             <div class="overlay">
               <h4>Pagina Web de Cliente 4</h4>
               <p>Landing page para emprendedor</p>
-              <a href="Datapoint.html" class="btn btn-next">Ver más></a>
+              <a href="Datapoint.html" class="btn btn-primary btn-next">Ver más</a>
             </div>
           </div>
         </div>
@@ -119,24 +153,45 @@
     </div>
   </section>
 
-  <!-- SECCIÓN DE AGENDA TU CITA -->
-<section id="agenda" class="agenda-cita">
-  <div class="contenido-agenda">
-    <h2 class="text-center text-warning mb-5">¿Listo para dar el siguiente paso?</h2>
-    <a href="Formulario.html" class="btn btn-next">Agenda tu cita</a>
-  </div>
-  
-</section>
+  <!-- Sección Agenda tu Cita -->
+  <section id="agenda" class="agenda-cita py-5 text-center bg-light">
+    <div class="container">
+      <h2 class="display-4 fw-bold text-warning mb-4">¿Listo para dar el siguiente paso?</h2>
+      <p class="fs-4 mb-5 mx-auto" style="max-width: 700px;">
+        Crea tu página web a medida y lleva tu negocio al siguiente nivel.
+      </p>
+      <a href="Formulario.html" class="btn btn-warning btn-lg px-5 py-3 shadow fw-bold text-uppercase" style="letter-spacing: 1.2px;">
+        Agenda tu cita ahora
+      </a>
+    </div>
+  </section>
+
+  <!-- Sección Plantillas -->
+  <section id="plantillas" class="py-5 text-white text-center rounded mx-auto" style="max-width: 1200px; background: linear-gradient(135deg, #ff9800, #e68900); box-shadow: inset 0 0 50px rgba(255,255,255,0.2);">
+    <div class="container">
+      <h2 class="display-4 fw-bold mb-3" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">Adquirí nuestras plantillas profesionales</h2>
+      <p class="fs-4 mb-5 mx-auto" style="max-width: 800px; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">
+        Empezá a ser conocido en internet con diseños modernos, funcionales y listos para usar.
+      </p>
+      <a href="plantillas.html" class="btn btn-light btn-lg px-5 py-3 shadow fw-bold text-uppercase me-3">
+        Ver Plantillas
+      </a>
+      <a href="Formulario.html" class="btn btn-outline-light btn-lg px-5 py-3 shadow fw-bold text-uppercase">
+        Consultar página personalizada
+      </a>
+    </div>
+  </section>
 
 </main>
 
-  <!-- Pie de página -->
-  <footer class="text-center text-white bg-black py-3">
-    <p class="mb-0">© 2025 Kevin Luna. Todos los derechos reservados.</p>
-  </footer>
+<!-- Footer -->
+<footer class="text-center text-white bg-black py-3">
+  <p class="mb-0">© 2025 Kevin Luna. Todos los derechos reservados.</p>
+</footer>
 
-  <!-- Script de Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Scripts Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+<script src="carousel.js"></script>
+
 </body>
-
 </html>

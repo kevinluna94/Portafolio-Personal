@@ -24,13 +24,32 @@ body {
 
 /* Estilos para la sección de inicio */
 .inicio {
-    height: 100vh; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    background-image: url('Imagenes/Portada.jpg'); 
-    background-size: cover; 
-    background-position: center; 
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-background {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .inicio .overlay {
@@ -45,10 +64,6 @@ body {
     align-items: center; 
     text-align: center; 
     border-radius: 10px; 
-}
-
-.inicio:hover {
-    transform: scale(1.03); /* Efecto de zoom al pasar el cursor */
 }
 
 /* Estilos para los botones personalizados */
@@ -152,7 +167,7 @@ h2 {
     margin-bottom: 10px;    
   }
 
-  /* Estilos para la sección de contacto */
+/* Estilos para la sección de contacto */
 #contacto {
     background-color: #ffffff; /* Fondo blanco */
 }
@@ -165,21 +180,121 @@ form textarea {
     padding: 10px;
 }
 
+/* --- SECCIÓN AGENDA CITA (Modificada con fondo gris claro) --- */
 .agenda-cita {
-  background-color: white;
-  color: black;
+  background-color: #f8f9fa; /* gris claro */
+  color: #333; /* texto oscuro */
   text-align: center;
   padding: 80px 20px;
 }
 
-.contenido-agenda h2 {
-  font-size: 2.2rem;
-  margin-bottom: 15px;
+.agenda-cita h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff9800; /* naranja */
+  margin-bottom: 1.5rem;
 }
 
-.contenido-agenda p {
-  font-size: 1rem;
-  margin-bottom: 30px;
+.agenda-cita p {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.agenda-cita .btn {
+  background-color: #ff9800;
+  color: white;
+  padding: 18px 60px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  box-shadow: 0 6px 12px rgba(255, 152, 0, 0.5);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none;
+  display: inline-block;
+}
+
+.agenda-cita .btn:hover,
+.agenda-cita .btn:focus {
+  background-color: #e68900;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(230, 137, 0, 0.7);
+  text-decoration: none;
+}
+
+/* --- SECCIÓN PLANTILLAS (Nueva con fondo degradado naranja) --- */
+#plantillas {
+  background: linear-gradient(135deg, #ff9800, #e68900);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  border-radius: 15px;
+  max-width: 1200px;
+  margin: 40px auto;
+  box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.2);
+}
+
+#plantillas h2 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#plantillas p {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+#plantillas .btn {
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 18px 50px;
+  border-radius: 30px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+#plantillas .btn-light {
+  background-color: white;
+  color: #e68900;
+  margin-right: 1rem;
+  border: none;
+}
+
+#plantillas .btn-light:hover,
+#plantillas .btn-light:focus {
+  background-color: #fff7e6;
+  box-shadow: 0 8px 20px rgba(255, 200, 100, 0.7);
+  transform: translateY(-5px);
+  text-decoration: none;
+}
+
+#plantillas .btn-outline-light {
+  color: white;
+  border: 2px solid white;
+  background-color: transparent;
+}
+
+#plantillas .btn-outline-light:hover,
+#plantillas .btn-outline-light:focus {
+  background-color: white;
+  color: #e68900;
+  border-color: white;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.7);
+  transform: translateY(-5px);
+  text-decoration: none;
 }
 
 /* FOOTER */
@@ -191,19 +306,39 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Responsivo: títulos y textos más pequeños en pantallas chicas */
+/* Responsividad para títulos, párrafos y botones (incluye sección plantillas y agenda) */
 @media (max-width: 768px) {
-    .inicio .overlay h2 {
-        font-size: 1.8rem;
-    }
+  .inicio .overlay h2 {
+    font-size: 1.8rem;
+  }
 
-    .inicio .overlay p {
-        font-size: 1rem;
-    }
+  .inicio .overlay p {
+    font-size: 1rem;
+  }
 
-    .btn-next {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
+  .btn-next {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .agenda-cita h2,
+  #plantillas h2 {
+    font-size: 1.8rem;
+  }
+
+  .agenda-cita p,
+  #plantillas p {
+    font-size: 1rem;
+  }
+
+  .agenda-cita .btn,
+  #plantillas .btn {
+    padding: 14px 30px;
+    font-size: 1rem;
+  }
+
+  #plantillas .btn-light {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
 }
-
