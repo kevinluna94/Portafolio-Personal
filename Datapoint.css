@@ -63,6 +63,13 @@ body {
   color: white;
 }
 
+.form-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+
 /* Estilo vinculo index.html*/
 .volver-enlace {
   color: #00b4d8;
@@ -73,4 +80,13 @@ body {
 .volver-enlace:hover {
   text-decoration: underline;
   color: #48cae4;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form-wrapper {
+    max-width: 100%;
+    padding: 0 15px;
+  }
 }
