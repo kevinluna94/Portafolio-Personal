@@ -86,7 +86,7 @@ body {
 
 /* Estilos para la sección de objetivo */
 .objetivo {
-    min-height: 100vh; /* Ocupa al menos toda la altura del viewport */
+    min-height: 50vh; /* Ocupa al menos toda la altura del viewport */
     display: flex; 
     justify-content: center; 
     align-items: center;
