@@ -113,18 +113,32 @@
     
     <!-- FORMULARIO -->
     <section class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center mb-4 text-dark">¡Hablemos!</h2>
-        <form id="formContacto">
-          <div class="mb-3"><label for="nombre" class="form-label">Nombre</label><input type="text" class="form-control" id="nombre" required></div>
-          <div class="mb-3"><label for="correo" class="form-label">Correo</label><input type="email" class="form-control" id="correo" required></div>
-          <div class="mb-3"><label for="mensaje" class="form-label">Mensaje</label><textarea class="form-control" id="mensaje" rows="3" required></textarea></div>
-          <div class="mb-3"><label for="resumenServicios" class="form-label">Resumen del presupuesto</label><textarea class="form-control" id="resumenServicios" readonly></textarea></div>
-          <button type="submit" class="btn btn-next">Enviar</button>
-        </form>
-      </div>
-    </section>
-  </main>
+  <div class="container">
+    <h2 class="text-center mb-4 text-dark">¡Hablemos!</h2>
+    <div class="form-wrapper mx-auto">
+      <form id="formContacto">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" required>
+        </div>
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="correo" required>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="resumenServicios" class="form-label">Resumen del presupuesto</label>
+          <textarea class="form-control" id="resumenServicios" readonly></textarea>
+        </div>
+        <button type="submit" class="btn btn-next">Enviar</button>
+      </form>
+    </div>
+  </div>
+</section>
+
 
   <footer class="text-center text-white bg-black py-3">
     <p class="mb-0">© 2025 Kevin Luna. Todos los derechos reservados.</p>
