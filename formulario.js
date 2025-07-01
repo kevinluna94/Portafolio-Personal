@@ -3,41 +3,41 @@ const proyectos = {
   landing: {
     titulo: "Landing Page",
     descripcion: "Una página sencilla y efectiva para captar clientes rápidamente. Precio base: $500.",
-    imagenPrincipal: "Imagenes/landing-page.jpg",
+    imagenPrincipal: "https://i.pinimg.com/736x/51/13/87/511387571f365467aa0f3b51dc2ba319.jpg",
     carrusel: [
-      "https://i.pinimg.com/736x/01/5f/b6/015fb6c95f08ae75f44b3b5d55e75e03.jpg",
-      "https://i.pinimg.com/736x/f4/17/56/f417561784bde8b4dd548f07a2cc9941.jpg",
-      "https://i.pinimg.com/736x/90/ff/f7/90fff76eb60182e62b458d2a0e7f88f3.jpg"
+      "https://i.pinimg.com/736x/65/d1/41/65d141691ccb5d821d5950ae99c4ff8a.jpg",
+      "https://i.pinimg.com/736x/51/13/87/511387571f365467aa0f3b51dc2ba319.jpg",
+      "https://i.pinimg.com/736x/65/d1/41/65d141691ccb5d821d5950ae99c4ff8a.jpg"
     ]
   },
   ecommerce: {
     titulo: "E-commerce",
     descripcion: "Tienda virtual con productos, carrito, pagos y gestión de pedidos. Escalable y segura. Precio base: $1200.",
-    imagenPrincipal: "https://i.pinimg.com/736x/26/17/a5/2617a5da4a01cf9c3dc6dfe1ca0e0c04.jpg",
+    imagenPrincipal: "https://i.pinimg.com/736x/fd/c3/fc/fdc3fc22169b78de73d86fadbc6bba47.jpg",
     carrusel: [
-      "https://i.pinimg.com/736x/32/4f/81/324f81cc9f6685f43e0b1955e59b8ee1.jpg",
-      "https://i.pinimg.com/736x/18/25/34/182534b63c8d17d9554ef26b2c65a768.jpg",
-      "https://i.pinimg.com/736x/56/75/d2/5675d2d58171d6bfaa19370b7ea81c5a.jpg"
+      "https://i.pinimg.com/736x/e1/a4/0d/e1a40df911bcc81cd14957bc0f68f93b.jpg",
+      "https://i.pinimg.com/736x/fd/c3/fc/fdc3fc22169b78de73d86fadbc6bba47.jpg",
+      "https://i.pinimg.com/736x/e1/a4/0d/e1a40df911bcc81cd14957bc0f68f93b.jpg"
     ]
   },
   corporativo: {
     titulo: "Sitio Web Corporativo",
     descripcion: "Página profesional para empresas, con secciones informativas, formularios, blog y diseño adaptado a tu empresa. Precio base: $800.",
-    imagenPrincipal: "Imagenes/sitio-web-corporativo.jpg",
+    imagenPrincipal: "https://i.pinimg.com/736x/79/73/11/79731163f3b282c0fb4eadc385fc1486.jpg",
     carrusel: [
-      "https://i.pinimg.com/736x/5c/2e/d3/5c2ed354df50866ecad9e4016c157230.jpg",
-      "https://i.pinimg.com/736x/e4/07/bb/e407bb7d42f9a2f5802d112a1f76e668.jpg",
-      "https://i.pinimg.com/736x/2a/b2/c0/2ab2c0b86098c1338a1e6dbf1be12e4f.jpg"
+      "https://i.pinimg.com/736x/f9/dc/2b/f9dc2b4a24d63ba2b5b99c6684d9e426.jpg",
+      "https://i.pinimg.com/736x/79/73/11/79731163f3b282c0fb4eadc385fc1486.jpg",
+      "https://i.pinimg.com/736x/f9/dc/2b/f9dc2b4a24d63ba2b5b99c6684d9e426.jpg"
     ]
   },
   portafolio: {
     titulo: "Portafolio Personal",
     descripcion: "Muestra profesional de proyectos y habilidades personales para atraer clientes y empleadores. Precio base: $400.",
-    imagenPrincipal: "Imagenes/portafolio-personal.jpg",
+    imagenPrincipal: "https://i.pinimg.com/736x/df/f0/44/dff044127e140b29bf9251c44df59c21.jpg",
     carrusel: [
-      "Imagenes/portafolio-1.jpg",
-      "Imagenes/portafolio-2.jpg",
-      "Imagenes/portafolio-3.jpg"
+      "https://i.pinimg.com/736x/31/32/42/313242647cd93278b4306666eec8331e.jpg",
+      "https://i.pinimg.com/736x/df/f0/44/dff044127e140b29bf9251c44df59c21.jpg",
+      "https://i.pinimg.com/736x/31/32/42/313242647cd93278b4306666eec8331e.jpg"
     ]
   }
 };
